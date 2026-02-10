@@ -128,8 +128,8 @@ function renderBooks() {
   let bookList = document.getElementById("book_list");
   bookList.innerHTML = "";
 
-    for (let bookIndex = 0; bookIndex < books.length; bookIndex++) {
-        bookList.innerHTML += getBookTemplate(bookIndex);
+    for (let booksIndex = 0; booksIndex < books.length; booksIndex++) {
+        bookList.innerHTML += getBookTemplate(booksIndex);
     }
 }
 

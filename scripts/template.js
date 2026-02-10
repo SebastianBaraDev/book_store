@@ -1,8 +1,8 @@
 // Book List Template
 function getBookTemplate(bookIndex) {
     return `<div class="BookWidget">
-    <h3>${allBooks.booksTitle[bookIndex]}</h3>
-    <p>${allBooks.booksDescription[bookIndex]}</p>
+    <h3>${books[bookIndex].name}</h3>
+    <p>${books[bookIndex].description}</p>
     <div class="icon-container">
     <img class="icons" src="./assets/icons/trash_icon.png" onclick="moveBook(${bookIndex}, 'books', 'trashBooks')">
     <img class="icons" src="./assets/icons/archiv_icon.png" onclick="moveBook(${bookIndex}, 'books', 'archivBooks')">
