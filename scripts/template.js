@@ -1,17 +1,48 @@
 // Book List Template
 function getBookTemplate(bookIndex) {
     return `<div class="BookWidget">
-    <h3>${books[bookIndex].name}</h3>
-    <p>${books[bookIndex].description}</p>
-    <div class="icon-container">
-    <img class="icons" src="./assets/icons/trash_icon.png" onclick="moveBook(${bookIndex}, 'books', 'trashBooks')">
-    <img class="icons" src="./assets/icons/archiv_icon.png" onclick="moveBook(${bookIndex}, 'books', 'archivBooks')">
+
+        <h3>${books[bookIndex].name}</h3>
+    
+    <hr>
+        <img src="${books[bookIndex].cover}" alt="${books[bookIndex].name} Cover" class="bookCover">
+    <hr>
+
+    <div class="priceLikes">
+        <p class="price">${books[bookIndex].price} €</p>
+        <img class="likeIcon" src="./assets/icons/unliked.png" onclick="toggleLike(${bookIndex})">
     </div>
+
+    <div class="info">
+        <div class="infoBoxLeft">
+            <p>Author:</p>
+            <p>Published:</p>
+            <p>Genre:</p>
+        </div>
+        <div class="infoBoxRight">
+            <p>${books[bookIndex].author}</p>
+            <p>${books[bookIndex].publishedYear}</p>
+            <p>${books[bookIndex].genre}</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="commentSection">
+        <h4>Kommentare:</h4>
+        <div class="comments">
+        <div class="user">
+            <p>${books[bookIndex].comments[commentsIndex].name}:</p>
+        </div>
+        <div class="comment">
+            <p>"${books[bookIndex].comments[commentsIndex].comment}"</p>
+        </div>
+    </div>
+    </div>
+
     </div>`;
 }
 
-//Book Title Box
-//Book Cover Box
 //Book Price Box
     //Price
         //Likes

@@ -3,8 +3,92 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: #0820b9;
+    background-color: #0D3240;
     border-radius: 10px;
+    border: solid 2px #787b7c;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px;
+    width: 400px;
+}
+
+hr {
+    width: 100%;
+    border: solid 2px #0B4157;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.bookCover {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.priceLikes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.price {
+    font-size: 24px;
+    color: #FE5B4E;
+}
+
+.likeIcon {
+    width: 32px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.infoBoxLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 150px;
+    margin-top: 10px;
+}
+
+.infoBoxRight {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 150px;
+    margin-top: 10px;
+}
+
+.comments {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    background-color: rgb(14, 57, 73);
+    height: 160px;
+    overflow: auto;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 150px;
+    padding: 10px 5px 5px 5px;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 150px;
+    padding: 10px 5px 5px 5px;
+}
+
+h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
 }

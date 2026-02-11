@@ -1,11 +1,12 @@
 let books = [
   {
-    "name": "Die Krone von Eldoria",
-    "author": "Arin Falkenstein",
+    "name": "Die Chroniken von Eldoria",
+    "author": "Jonas Wacker",
+    "cover": "./assets/img/die_chroniken_von_eldoria_cover.jpg",
     "likes": 2100,
     "liked": true,
     "price": 24.99,
-    "publishedYear": 2014,
+    "publishedYear": 2024,
     "genre": "Fantasy",
     "comments": [
       {
@@ -19,17 +20,18 @@ let books = [
     ]
   },
   {
-    "name": "Sterne über Andromeda",
-    "author": "Lena Kosmos",
+    "name": "Die Hüter der vier Elemente",
+    "author": "Dagmar Winter",
+    "cover": "./assets/img/die_hueter_der_vier_elemente.jpg",
     "likes": 1650,
     "liked": false,
-    "price": 19.50,
-    "publishedYear": 2020,
-    "genre": "Science-Fiction",
+    "price": 19.95,
+    "publishedYear": 2024,
+    "genre": "Fantasy",
     "comments": [
       {
-        "name": "SciFiFan",
-        "comment": "Spannende Zukunftsvisionen und starke Charaktere."
+        "name": "FantasyFan",
+        "comment": "Spannende Fantasyvisionen und starke Charaktere."
       }
     ]
   },
