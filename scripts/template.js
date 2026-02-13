@@ -30,14 +30,17 @@ function getBookTemplate(bookIndex) {
 
     <div class="commentSection">
         <h4>Kommentare:</h4>
-        <div class="comments">
-        <div class="user">
-            <p>${books[bookIndex].comments[commentsIndex].name}:</p>
-        </div>
-        <div class="comment">
-            <p>"${books[bookIndex].comments[commentsIndex].comment}"</p>
-        </div>
-    </div>
+            <div class="comments">
+                <div class="user">
+                    <p>${books[bookIndex].comments[0].name}:</p>
+                </div>
+                <div class="comment">
+                    <p>"${books[bookIndex].comments[0].comment}"</p>
+                </div>
+            </div>
+        <div class="addComment">
+            <input type="text" id="commentInput" placeholder="Kommentar hinzufügen...">
+            <img src="./assets/icons/send.png" alt="Send Icon" class="sendIcon" onclick="addComment(${bookIndex})">
     </div>
 
     </div>`;

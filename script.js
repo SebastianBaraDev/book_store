@@ -36,11 +36,12 @@ let books = [
     ]
   },
   {
-    "name": "Der Pfad der inneren Klarheit",
-    "author": "Jonas Licht",
+    "name": "Der Weg zur inneren Klarheit",
+    "author": "Eva Barwig ",
+    "cover": "./assets/img/der_weg_zur_inneren_klarheit.jpg",
     "likes": 3200,
     "liked": true,
-    "price": 18.90,
+    "price": 18.99,
     "publishedYear": 2018,
     "genre": "Persönlichkeitsentwicklung",
     "comments": [
