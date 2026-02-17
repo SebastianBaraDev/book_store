@@ -57,7 +57,8 @@ let books = [
   },
   {
     "name": "Reichtum beginnt im Kopf",
-    "author": "Martin Goldmann",
+    "author": "Jonathan Reeve",
+    "cover": "./assets/img/reichtum_beginnt_im_kopf.jpg",
     "likes": 4100,
     "liked": true,
     "price": 21.00,
@@ -72,7 +73,8 @@ let books = [
   },
   {
     "name": "Das Vermächtnis der Drachen",
-    "author": "Helena Sturm",
+    "author": " Jupiter Phaeton",
+    "cover": "./assets/img/das_vermaechtnis_der_drachen.jpg",
     "likes": 2750,
     "liked": false,
     "price": 22.50,
@@ -81,8 +83,9 @@ let books = [
     "comments": []
   },
   {
-    "name": "Jenseits der Galaxiengrenze",
-    "author": "Tarek Nova",
+    "name": "Jenseits der Götter",
+    "author": "Daniel Krinke",
+    "cover": "./assets/img/jenseits_der_goetter.jpg",
     "likes": 1980,
     "liked": true,
     "price": 20.00,
@@ -96,11 +99,12 @@ let books = [
     ]
   },
   {
-    "name": "Der Alchemist des Alltags",
-    "author": "Samuel Rivera",
+    "name": "Der Alchemist",
+    "author": "Paulo Coelho",
+    "cover": "./assets/img/der_alchemist.jpg",
     "likes": 3600,
     "liked": true,
-    "price": 17.99,
+    "price": 11.99,
     "publishedYear": 2015,
     "genre": "Persönlichkeitsentwicklung",
     "comments": [
@@ -111,11 +115,12 @@ let books = [
     ]
   },
   {
-    "name": "Finanzielle Freiheit Schritt für Schritt",
-    "author": "Robert Stein",
+    "name": "Der Weg zur finanziellen Freiheit",
+    "author": "Bodo Schäfer",
+    "cover": "./assets/img/der_weg_zur_finanziellen_freiheit.jpg",
     "likes": 2900,
     "liked": false,
-    "price": 23.75,
+    "price": 13.75,
     "publishedYear": 2021,
     "genre": "Finanzen",
     "comments": [
@@ -136,11 +141,8 @@ function renderBooks() {
     }
 }
 
-let bookList = document.getElementById("book_list");
-
 // Buchtitel like / dislike
 // Kommentare hinzufügen
-    // Kommentarfeld
     // Kommentare speichern
     // Kommentare anzeigen
     // Kommentare löschen

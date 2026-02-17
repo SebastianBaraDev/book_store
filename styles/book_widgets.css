@@ -38,6 +38,7 @@ hr {
 
 .likeIcon {
     width: 32px;
+    cursor: pointer;
 }
 
 .info {
@@ -66,7 +67,7 @@ hr {
     display: flex;
     justify-content: space-between;
     width: 300px;
-    background-color: rgb(14, 57, 73);
+    background-color: #0e3949;
     height: 160px;
     overflow: auto;
 }
@@ -91,4 +92,28 @@ h4 {
     font-size: 20px;
     margin-bottom: 15px;
     font-weight: 600;
+}
+
+.addComment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    width: 300px;
+    margin-top: 4px;
+}
+
+#commentInput {
+    flex: 1;
+    height: 32px;
+    outline: 0;
+    border-bottom: solid 4px #0B4157;
+    background-color: #134f65;
+    color: #ffffff;
+    padding: 4px;
+}
+
+.sendIcon {
+    width: 32px;
+    cursor: pointer;
 }
