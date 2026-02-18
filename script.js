@@ -80,7 +80,12 @@ let books = [
     "price": 22.50,
     "publishedYear": 2019,
     "genre": "Fantasy",
-    "comments": []
+    "comments": [
+      {
+        "name": "DragonLover",
+        "comment": "Drachenfans werden dieses Buch lieben – eine fesselnde Geschichte mit fantastischen Kreaturen."
+      }
+    ]
   },
   {
     "name": "Jenseits der Götter",
@@ -141,13 +146,23 @@ function renderBooks() {
     }
 }
 
+
+
 // Buchtitel like / dislike
+function toggleHeart(bookIndex) {
+  let img = document.getElementById('likeHeart' + bookIndex);
+  if (img.src.endsWith('unliked.png')) {
+    img.src = './assets/icons/liked.png';
+    books[bookIndex].liked = true;
+    books[bookIndex].likes += 1;
+  } else {
+    img.src = './assets/icons/unliked.png';
+    books[bookIndex].liked = false;
+    books[bookIndex].likes -= 1;
+  }
+}
 // Kommentare hinzufügen
     // Kommentare speichern
     // Kommentare anzeigen
     // Kommentare löschen
 // localStorage verwenden, um die Daten zu speichern
-
-// Bücher bewerten
-// Bücher löschen
-// Bücher hinzufügen

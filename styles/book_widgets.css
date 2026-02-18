@@ -103,7 +103,7 @@ h4 {
     margin-top: 4px;
 }
 
-#commentInput {
+.commentInput {
     flex: 1;
     height: 32px;
     outline: 0;

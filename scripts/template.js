@@ -10,7 +10,7 @@ function getBookTemplate(bookIndex) {
 
     <div class="priceLikes">
         <p class="price">${books[bookIndex].price} €</p>
-        <img class="likeIcon" src="./assets/icons/unliked.png" onclick="toggleLike(${bookIndex})">
+        <img id="likeHeart${bookIndex}" class="likeIcon" src="./assets/icons/unliked.png" onclick="toggleHeart(${bookIndex})">
     </div>
 
     <div class="info">
@@ -39,31 +39,10 @@ function getBookTemplate(bookIndex) {
                 </div>
             </div>
         <div class="addComment">
-            <input type="text" id="commentInput" placeholder="Kommentar hinzufügen...">
+            <input type="text" class="commentInput" placeholder="Kommentar hinzufügen...">
             <img src="./assets/icons/send.png" alt="Send Icon" class="sendIcon" onclick="addComment(${bookIndex})">
     </div>
 
     </div>`;
 }
 
-//Book Price Box
-    //Price
-        //Likes
-        //img
-//Book Rating Box
-    //Five empty stars
-//Book Description Box
-    //Author
-    //Genre
-    //Release Date
-//Comment Section Box
-    //Comment Box
-        //Titel
-        //Username
-        //Comment Text
-    //Comment Input Box
-        //Input Field
-        //Submit Button img
-
-
-// Add Book
