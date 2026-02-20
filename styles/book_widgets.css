@@ -36,6 +36,12 @@ hr {
     color: #FE5B4E;
 }
 
+.likeCounter {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
 .likeIcon {
     width: 32px;
     cursor: pointer;
@@ -101,6 +107,17 @@ h4 {
     gap: 5px;
     width: 300px;
     margin-top: 4px;
+}
+
+.userInput {
+    flex: 1;
+    height: 32px;
+    outline: 0;
+    border-bottom: solid 4px #0B4157;
+    background-color: #134f65;
+    color: #ffffff;
+    padding: 4px;
+    margin-top: 5px;
 }
 
 .commentInput {
