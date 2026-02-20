@@ -34,8 +34,8 @@ function getBookTemplate(bookIndex) {
     <div class="commentSection">
         <h4>Kommentare:</h4>
             <div class="comments">
-            ${renderComments(bookIndex)}
-            </div>
+                ${renderCommentSection(bookIndex)}
+         </div>
 
             <input type="text" id="userInput${bookIndex}" class="userInput" placeholder="User Name...">
         <div class="addComment">

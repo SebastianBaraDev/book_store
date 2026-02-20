@@ -1,4 +1,3 @@
-// Kommentare hinzufügen
 function addComment(bookIndex) {
   let userInput = document.getElementById('userInput' + bookIndex);
   let commentInput = document.getElementById('commentInput' + bookIndex);
@@ -12,24 +11,21 @@ function addComment(bookIndex) {
     alert("Bitte füllen Sie beide Felder aus, um einen Kommentar hinzuzufügen.");
   }
 
-    renderComments(bookIndex);
+    renderCommentSection(bookIndex);
     userInput.value = "";
     commentInput.value = "";
   }
 
-function renderComments(bookIndex) {
-      let commentsHTML = "";
-      for (let commentIndex = 0; commentIndex < books[bookIndex].comments.length; commentIndex++) {
-        commentsHTML += 
-                `<div class="user">
-                    <p>${books[bookIndex].comments[commentIndex].name}:</p>
-                </div>
-                <div class="comment">
-                    <p>"${books[bookIndex].comments[commentIndex].comment}"</p>
-                </div>`;
+function renderCommentSection(bookIndex) {
+ let commentsHTML = "";
+  for (let commentIndex = 0; commentIndex < books[bookIndex].comments.length; commentIndex++) {
+    let comment = books[bookIndex].comments[commentIndex].comment;
+    let name = books[bookIndex].comments[commentIndex].name;
+    commentsHTML +=  `<p><span style="font-weight: bold;">${name}</span>:____<i>"${comment}"</i> </p>`;
 
-            return commentsHTML;
-      }
 }
-    // Kommentare anzeigen
+
+ return commentsHTML;
+}
+
     // Kommentare löschen
