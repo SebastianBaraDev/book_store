@@ -71,29 +71,12 @@ hr {
 
 .comments {
     display: flex;
-    align-items: center;
     flex-direction: column;
     width: 300px;
     background-color: #0e3949;
     height: 160px;
     gap: 10px;
     overflow: auto;
-    padding: 10px 5px 5px 5px;
-}
-
-.user {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 150px;
-    padding: 10px 5px 5px 5px;
-}
-
-.comment {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 150px;
     padding: 10px 5px 5px 5px;
 }
 
