@@ -1,3 +1,8 @@
+  function init(bookIndex, commentIndex) {
+  loadFromLocalStorage(bookIndex, commentIndex);
+  renderBooks();
+}
+
 function renderBooks() {
   let bookList = document.getElementById("book_list");
   bookList.innerHTML = "";

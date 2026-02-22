@@ -1,4 +1,4 @@
-function addComment(bookIndex) {
+function addComment(bookIndex, commentIndex) {
   let userInput = document.getElementById('userInput' + bookIndex);
   let commentInput = document.getElementById('commentInput' + bookIndex);
 
@@ -11,10 +11,10 @@ function addComment(bookIndex) {
     alert("Bitte füllen Sie beide Felder aus, um einen Kommentar hinzuzufügen.");
   }
 
-    renderCommentSection(bookIndex);
+    saveToLocalStorage(bookIndex, commentIndex);
+    renderBooks(bookIndex);
     userInput.value = "";
     commentInput.value = "";
-    renderBooks(bookIndex);
   }
 
 function renderCommentSection(bookIndex) {
@@ -31,4 +31,3 @@ function renderCommentSection(bookIndex) {
 }
 
     // Kommentare löschen
-    //`<p><span style="font-weight: bold;">${name}</span>:____<i>"${comment}"</i> </p>`;
