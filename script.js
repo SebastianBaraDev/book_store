@@ -1,5 +1,5 @@
-  function init(bookIndex, commentIndex) {
-  loadFromLocalStorage(bookIndex, commentIndex);
+  function init() {
+  loadFromLocalStorage();
   renderBooks();
 }
 

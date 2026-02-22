@@ -120,3 +120,20 @@ h4 {
     width: 32px;
     cursor: pointer;
 }
+
+.deleteComment {
+    display: flex;
+    align-items: center;
+    border: solid 1px #787878;
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 20px;
+    cursor: pointer;
+}
+
+.comment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}

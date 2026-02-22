@@ -11,7 +11,7 @@ function addComment(bookIndex, commentIndex) {
     alert("Bitte füllen Sie beide Felder aus, um einen Kommentar hinzuzufügen.");
   }
 
-    saveToLocalStorage(bookIndex, commentIndex);
+    saveToLocalStorage();
     renderBooks(bookIndex);
     userInput.value = "";
     commentInput.value = "";
@@ -23,11 +23,24 @@ function renderCommentSection(bookIndex) {
   for (let commentIndex = 0; commentIndex < books[bookIndex].comments.length; commentIndex++) {
     let comment = books[bookIndex].comments[commentIndex].comment;
     let name = books[bookIndex].comments[commentIndex].name;
-    commentsHTML +=  `<p><span style="font-weight: bold;">${name}</span>:____<i>"${comment}"</i> </p>`;
+    commentsHTML +=  `<div class="comment">
+                        <p>
+                            <span style="font-weight: bold; text-decoration: underline;">${name}</span>: 
+                            <br>
+                            <i>"${comment}"</i>
+                        </p>
+                            <img src="assets/icons/trash.png" alt="delete" class="deleteComment" onclick="deleteComment(${bookIndex}, ${commentIndex})">
+                      </div>
+                     `;
 
 }
 
  return commentsHTML;
 }
 
-    // Kommentare löschen
+
+function deleteComment(bookIndex, commentIndex) {
+    books[bookIndex].comments.splice(commentIndex,1);
+    saveToLocalStorage();
+    renderBooks(bookIndex);
+}
