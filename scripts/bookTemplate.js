@@ -1,17 +1,18 @@
 // Book List Template
 function getBookTemplate(bookIndex) {
+    let book = books[bookIndex];
     return `<div class="BookWidget">
 
-        <h3>${books[bookIndex].name}</h3>
+        <h3>${book.name}</h3>
     
     <hr>
-        <img src="${books[bookIndex].cover}" alt="${books[bookIndex].name} Cover" class="bookCover">
+        <img src="${book.cover}" alt="${book.name} Cover" class="bookCover">
     <hr>
 
     <div class="priceLikes">
-        <p class="price">${books[bookIndex].price} €</p>
+        <p class="price">${book.price} €</p>
             <div class="likeCounter">
-                <p>${books[bookIndex].likes}</p>
+                <p>${book.likes}</p>
                 <img id="likeHeart${bookIndex}" class="likeIcon" src="./assets/icons/unliked.png" onclick="toggleHeart(${bookIndex})">
             </div>
     </div>
@@ -23,9 +24,9 @@ function getBookTemplate(bookIndex) {
             <p>Genre:</p>
         </div>
         <div class="infoBoxRight">
-            <p>${books[bookIndex].author}</p>
-            <p>${books[bookIndex].publishedYear}</p>
-            <p>${books[bookIndex].genre}</p>
+            <p>${book.author}</p>
+            <p>${book.publishedYear}</p>
+            <p>${book.genre}</p>
         </div>
     </div>
 
